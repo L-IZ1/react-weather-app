@@ -3,8 +3,8 @@ import './App.css';
 import './Weather.js';
 
 function App() {
-  return (
-    <div><hi>Hello</hi></div>
+  return 
+    <hi>Hello</hi>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
@@ -22,7 +22,7 @@ function App() {
     //   </header>
     // </div>
     
-  );
+
 }
 
 export default App;
