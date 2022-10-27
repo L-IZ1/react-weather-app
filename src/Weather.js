@@ -43,10 +43,6 @@ export default function Weather() {
              </div>
               </div>
 
-            <div>
-              {" "}
-              <hr />{" "}
-            </div>
             
             <div className="col-md-4 weather-live">
                   <p className="card-text-weather-conditions">
@@ -62,7 +58,13 @@ export default function Weather() {
                     Wind:10km/h
                   </p>
                 </div> 
-                <div>
+ <div>
+                 <div>
+              {" "}
+              <hr />{" "}
+            </div>
+
+               
           <p className="madebyme">
             <a
               className="link-github"
