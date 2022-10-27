@@ -16,5 +16,19 @@ export default function Weather() {
           <input type="text" placeholder="Type a city" onChange={updateCity} />
           <input type="submit" value="Search" />
         </form>
-      </div>);
+     
+      <div className="col-md-4 weather-live">
+                  <p className="card-text-weather-conditions">
+                    <i className="fa-solid fa-arrow-up max-current-temp"></i>{" "}
+                    Max:
+                    <span id="max-temp"></span>°C
+                    <br />
+                    <i className="fa-solid fa-arrow-down min-current-temp"></i>{" "}
+                    Min:
+                    <span id="min-temp"></span>°C
+                    <br />
+                    Humidity:80%<br />
+                    Wind:10km/h
+                  </p>
+                </div> </div>);
 }
