@@ -66,7 +66,7 @@ export default function Weather() {
           <p className="madebyme">
             <a
               className="link-github"
-              href="https://github.com/L-IZ1/my-weather-app"
+              href="https://github.com/L-IZ1/react-weather-app"
             >
               Open-source code
             </a>
