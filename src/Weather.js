@@ -1,4 +1,5 @@
 import React from "react";
+import Weather from "./Weather.css";
 
 export default function Weather() {
   
@@ -30,5 +31,23 @@ export default function Weather() {
                     Humidity:80%<br />
                     Wind:10km/h
                   </p>
-                </div> </div>);
+                </div> 
+                <div>
+          <p className="madebyme">
+            <a
+              className="link-github"
+              href="https://github.com/L-IZ1/my-weather-app"
+            >
+              Open-source code
+            </a>
+            <a
+              className="link-linkedin"
+              href="https://www.linkedin.com/in/elisepetitjean/"
+            >
+              {" "}
+              by Elise Petitjean <i className="fa-brands fa-linkedin"></i>
+            </a>
+          </p>
+        </div>
+        </div>);
 }
