@@ -48,7 +48,7 @@ export default function Weather() {
               <hr />{" "}
             </div>
             
-      <div className="col-md-4 weather-live">
+            <div className="col-md-4 weather-live">
                   <p className="card-text-weather-conditions">
                     <i className="fa-solid fa-arrow-up max-current-temp"></i>{" "}
                     Max:
@@ -78,6 +78,7 @@ export default function Weather() {
               by Elise Petitjean <i className="fa-brands fa-linkedin"></i>
             </a>
           </p>
+        </div>
         </div>
         </div>);
 }
