@@ -1,8 +1,16 @@
 import React from "react";
-import axios from "axios";
 
 export default function Weather() {
+  
+  function handleSubmit(event) {
+  event.preventDefault();}
+
+  function updateCity(event) {
+    alert("Hello");
+  }
+
   return (
+
     <div>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Type a city" onChange={updateCity} />
