@@ -1,5 +1,5 @@
 import React from "react";
-import Weather from "./Weather.css";
+import "./Weather.css";
 
 export default function Weather() {
   
