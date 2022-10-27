@@ -18,34 +18,32 @@ export default function Weather() {
           <input type="submit" value="Search" />
         </form>
      
-          <div>
-            <div className="live-weather">
-              <div className="row">
-                <div className="col-md-7 live-city">
-                  <ul>
-                    <li>
-                      <span className="searched-place">Paris</span>
-                    </li>
-                    <li className="date">Friday 10 a.m.</li>
-                  </ul>
-                  <div className="d-flex weather-temperature">
-                    <div className="float-left">
-                      <strong className="temp-number">
-                        25°C </strong>
-                    </div>
-                  </div>
+<div className="container">
+  <div className="live-weather">
+    <div className="row">
+      <div className="col-md-7 live-city">
+          <ul>
+            <li>
+              <span className="searched-place">Paris</span>
+            </li>
+            <li className="date">Friday 10 a.m.
+            </li>
+          </ul>
+            <div className="d-flex weather-temperature">
+              <div className="float-left">
+                  <strong className="temp-number">25°C</strong>
+              </div>
+            </div>
                   <ul>
                     <li className="weather-description-live">
                      Cloudy
                     </li>
                   </ul>
-            </div>
-             </div>
-              </div>
-
-            
-            <div className="col-md-4 weather-live">
-                  <p className="card-text-weather-conditions">
+        </div>
+    </div>
+</div>
+          <div className="col-md-4 weather-live">
+                <p className="card-text-weather-conditions">
                     <i className="fa-solid fa-arrow-up max-current-temp"></i>{" "}
                     Max:
                     <span id="max-temp"></span>°C
@@ -56,9 +54,9 @@ export default function Weather() {
                     <br />
                     Humidity:80%<br />
                     Wind:10km/h
-                  </p>
-                </div> 
- <div>
+                </p>
+            </div> 
+<div>
                  <div>
               {" "}
               <hr />{" "}
