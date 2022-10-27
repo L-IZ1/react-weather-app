@@ -18,7 +18,7 @@ export default function Weather() {
           <input type="submit" value="Search" />
         </form>
      
- <div>
+          <div>
             <div className="live-weather">
               <div className="row">
                 <div className="col-md-7 live-city">
@@ -39,31 +39,15 @@ export default function Weather() {
                      Cloudy
                     </li>
                   </ul>
-                </div>
-                <div className="col-md-4 weather-live">
-                  <p className="card-text-weather-conditions">
-                    <i className="fa-solid fa-arrow-up max-current-temp"></i>{" "}
-                    Max:
-                    <span id="max-temp"></span>°C
-                    <br />
-                    <i className="fa-solid fa-arrow-down min-current-temp"></i>{" "}
-                    Min:
-                    <span id="min-temp"></span>°C
-                    <br />
-                    Humidity:<span>{weatherData.humidity}</span>%<br />
-                    Wind:<span>{weatherData.wind}</span>km/h
-                  </p>
-                </div>
-              </div>
             </div>
+             </div>
+              </div>
+
             <div>
               {" "}
               <hr />{" "}
             </div>
-            <div className="weather-forecast" id="weather-forecast"></div>
-          </div>
-
-
+            
       <div className="col-md-4 weather-live">
                   <p className="card-text-weather-conditions">
                     <i className="fa-solid fa-arrow-up max-current-temp"></i>{" "}
