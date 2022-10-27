@@ -40,8 +40,7 @@ export default function Weather() {
                     </li>
                   </ul>
         </div>
-    </div>
-</div>
+   
           <div className="col-md-4 weather-live">
                 <p className="card-text-weather-conditions">
                     <i className="fa-solid fa-arrow-up max-current-temp"></i>{" "}
@@ -56,6 +55,8 @@ export default function Weather() {
                     Wind:10km/h
                 </p>
             </div> 
+             </div>
+</div>
 <div>
                  <div>
               {" "}
