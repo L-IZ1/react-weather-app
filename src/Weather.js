@@ -66,13 +66,13 @@ export default function Weather() {
           <p className="madebyme">
             <a
               className="link-github"
-              href="https://github.com/L-IZ1/react-weather-app"
+              href="https://github.com/L-IZ1/react-weather-app" target="_blank"
             >
               Open-source code
             </a>
             <a
               className="link-linkedin"
-              href="https://www.linkedin.com/in/elisepetitjean/"
+              href="https://www.linkedin.com/in/elisepetitjean/" target="_blank"
             >
               {" "}
               by Elise Petitjean <i className="fa-brands fa-linkedin"></i>
