@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Weather.css";
+import axios from "axios";
 
 export default function Weather() {
+  const[temperature, setTemperature] =useSte ("");
   
   function handleSubmit(event) {
   event.preventDefault();}
@@ -14,7 +16,10 @@ export default function Weather() {
 
     <div>
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Type a city" onChange={updateCity} />
+          <input type="text" 
+          placeholder="Type a city" 
+          autoFocus="on"
+          onChange={updateCity} />
           <input type="submit" value="Search" />
         </form>
      
@@ -31,7 +36,8 @@ export default function Weather() {
           </ul>
             <div className="d-flex weather-temperature">
               <div className="float-left">
-                  <strong className="temp-number">25°C</strong>
+                  <span><strong className="temp-number">25</strong></span>
+                  <span className="celsius">°C</span>
               </div>
             </div>
                   <ul>
