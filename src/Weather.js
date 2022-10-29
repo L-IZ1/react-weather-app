@@ -13,7 +13,7 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
 
-  if (weatherData.ready) {
+  if (weatherObject.ready) {
   return (
 
     <div>
