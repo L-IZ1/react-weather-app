@@ -1,17 +1,19 @@
-import React, {useState} from "react";
-import "./Weather.css";
+import React, { useState } from "react";
 import axios from "axios";
+import "./Weather.css";
 
-export default function Weather() {
-  const[temperature, setTemperature] =useSte ("");
+export default function Weather(props) {
+  const [weatherObject, setWeatherObject] = useState({ ready: false });;
+  const [city, setCity] = useState(props.defaultCity);
   
   function handleSubmit(event) {
   event.preventDefault();}
 
   function updateCity(event) {
-    alert("Hello");
+    setCity(event.target.value);
   }
 
+  if (weatherData.ready) {
   return (
 
     <div>
@@ -63,29 +65,11 @@ export default function Weather() {
             </div> 
              </div>
 </div>
-<div>
-                 <div>
-              {" "}
-              <hr />{" "}
-            </div>
+</div>
+</div> );
+}else{
+  return "Hello";
+}
 
-               
-          <p className="madebyme">
-            <a
-              className="link-github"
-              href="https://github.com/L-IZ1/react-weather-app" target="_blank" rel="noopener noreferrer"
-            >
-              Open-source code
-            </a>
-            <a
-              className="link-linkedin"
-              href="https://www.linkedin.com/in/elisepetitjean/" target="_blank" rel="noopener noreferrer"
-            >
-              {" "}
-              by Elise Petitjean <i className="fa-brands fa-linkedin"></i>
-            </a>
-          </p>
-        </div>
-        </div>
-        </div>);
+           
 }
