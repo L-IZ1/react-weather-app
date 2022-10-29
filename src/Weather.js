@@ -5,12 +5,28 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weatherObject, setWeatherObject] = useState({ ready: false });;
   const [city, setCity] = useState(props.defaultCity);
+
+  function handleResponseData (response) {
+    setWeatherObject({
+      ready: true,
+      temperature: response.data.temp,
+    })
+
+
+  }
   
   function handleSubmit(event) {
   event.preventDefault();}
 
+
   function updateCity(event) {
     setCity(event.target.value);
+  }
+
+function search() {
+    const apiKey = "41ee92b1c86o6aate6aaf3f706eca04d";
+    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=Paris&key={apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponseData);
   }
 
   if (weatherObject.ready) {
