@@ -79,8 +79,8 @@ function search() {
                     Min:
                     <span id="min-temp"></span>°C
                     <br />
-                    {props.data.humidity}<br />
-                    {props.data.wind}
+                    <span>{props.data.humidity}</span><br />
+                    <span>{props.data.wind}</span>
                 </p>
             </div> 
              </div>
