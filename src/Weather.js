@@ -51,20 +51,20 @@ function search() {
       <div className="col-md-7 live-city">
           <ul>
             <li>
-              <span className="searched-place">{props.data.city}</span>
+              <span className="searched-place">"Paris"</span>
             </li>
             <li className="date">Friday 10 a.m.
             </li>
           </ul>
             <div className="d-flex weather-temperature">
               <div className="float-left">
-                  <span><strong className="temp-number">{props.data.temperature}</strong></span>
+                  <span><strong className="temp-number">{props.weatherObject.temperature}</strong></span>
                   <span className="celsius">°C</span>
               </div>
             </div>
                   <ul>
                     <li className="weather-description-live">
-                     {props.data.description}
+                     {props.weatherObject.description}
                     </li>
                   </ul>
         </div>
@@ -79,8 +79,8 @@ function search() {
                     Min:
                     <span id="min-temp"></span>°C
                     <br />
-                    <span>{props.data.humidity}</span><br />
-                    <span>{props.data.wind}</span>
+                    <span>{props.weatherObject.humidity}</span><br />
+                    <span>{props.weatherObject.wind}</span>
                 </p>
             </div> 
              </div>
