@@ -10,7 +10,7 @@ export default function Weather(props) {
     setWeatherObject({
       ready: true,
       temperature: response.data.temperature.current,
-      temperature: response.data.main.temp,
+      temperature: response.data.temperature,
       humidity: response.data.temperature.humidity,
       date: (response.data.time * 1000),
       description: response.data.condition.description,
