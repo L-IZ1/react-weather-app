@@ -58,13 +58,13 @@ function search() {
           </ul>
             <div className="d-flex weather-temperature">
               <div className="float-left">
-                  <span><strong className="temp-number">{props.weatherObject.temperature}</strong></span>
+                  <span><strong className="temp-number">{props.WeatherObject.temperature}</strong></span>
                   <span className="celsius">°C</span>
               </div>
             </div>
                   <ul>
                     <li className="weather-description-live">
-                     {props.weatherObject.description}
+                     {props.WeatherObject.description}
                     </li>
                   </ul>
         </div>
@@ -79,8 +79,8 @@ function search() {
                     Min:
                     <span id="min-temp"></span>°C
                     <br />
-                    <span>{props.weatherObject.humidity}</span><br />
-                    <span>{props.weatherObject.wind}</span>
+                    <span>{props.WeatherObject.humidity}</span><br />
+                    <span>{props.WeatherObject.wind}</span>
                 </p>
             </div> 
              </div>
