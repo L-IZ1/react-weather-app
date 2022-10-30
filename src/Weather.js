@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import axios from "axios";
+import NiceDate from "./NiceDate";
 import "./Weather.css";
 
 export default function Weather(props) {
-  const [weatherObject, setWeatherObject] = useState({ ready: false });
+  const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponseData (response) {
-    setWeatherObject({
+    setWeather({
       ready: true,
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
-      date: (response.data.time * 1000),
+      date: new Date(response.data.time *1000),
       description: response.data.condition.description,
       icon: response.data.condition.icon,
       wind: response.data.wind.speed,
@@ -34,7 +35,7 @@ function search() {
     axios.get(apiUrl).then(handleResponseData);
   }
 
-  if (weatherObject.ready) {
+  if (weather.ready) {
   return (
     <div>
         <form onSubmit={handleSubmit}>
@@ -51,20 +52,20 @@ function search() {
       <div className="col-md-7 live-city">
           <ul>
             <li>
-              <span className="searched-place">"Paris"</span>
+              <span className="searched-place">{weather.city}</span>
             </li>
-            <li className="date">Friday 10 a.m.
+            <li className="date"><NiceDate date={weather.date}/>
             </li>
           </ul>
             <div className="d-flex weather-temperature">
               <div className="float-left">
-                  <span><strong className="temp-number">{props.WeatherObject.temperature}</strong></span>
+                  <span><strong className="temp-number">{weather.temperature}</strong></span>
                   <span className="celsius">°C</span>
               </div>
             </div>
                   <ul>
                     <li className="weather-description-live">
-                     {props.WeatherObject.description}
+                     {weather.description}
                     </li>
                   </ul>
         </div>
@@ -79,8 +80,8 @@ function search() {
                     Min:
                     <span id="min-temp"></span>°C
                     <br />
-                    <span>{props.WeatherObject.humidity}</span><br />
-                    <span>{props.WeatherObject.wind}</span>
+                    <span>{weather.humidity}</span><br />
+                    <span>{weather.wind}</span>
                 </p>
             </div> 
              </div>
