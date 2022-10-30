@@ -30,7 +30,7 @@ search();
 
 function search() {
     
-    const apiUrl = `https://api.shecodes.io/weather/v1/current?query={city}&key=41ee92b1c86o6aate6aaf3f706eca04d&units=metric`;
+    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=41ee92b1c86o6aate6aaf3f706eca04d&units=metric`;
     axios.get(apiUrl).then(handleResponseData);
   }
 
