@@ -4,23 +4,23 @@ body {
     padding: 0;
     font-family: "Noto Sans Mono", monospace;
     height: 100vh;
-    background: #ec6e4c no-repeat center center fixed;
+    background: #57435B no-repeat center center fixed;
     background-size: 100% 100%;
-    background: -webkit-linear-gradient(top, #ec6e4c, #ecc046);
-    background: -moz-linear-gradient(top, #ec6e4c, #ecc046);
-    background: -ms-linear-gradient(top, #ec6e4c, #ecc046);
-    background: -o-linear-gradient(top, #ec6e4c, #ecc046);
-    background: linear-gradient(to bottom, #ec6e4c, #ecc046);
+    background: -webkit-linear-gradient(top, #57435B, #A37B8D);
+    background: -moz-linear-gradient(top, #57435B, #A37B8D);
+    background: -ms-linear-gradient(top, #57435B, #A37B8D);
+    background: -o-linear-gradient(top, #57435B, #A37B8D);
+    background: linear-gradient(to bottom, #57435B, #A37B8D);
 }
 
 #inputtype {
     background-color: #f2e5b5;
-    color: #ec6e4c;
+    color: #D39559;
 }
 
 #container {
-    -webkit-box-shadow: 0px 5px 6px 2px #ec6e4c;
-    box-shadow: 0px 5px 6px 2px #ec6e4c;
+    -webkit-box-shadow: 0px 5px 6px 2px #D39559;
+    box-shadow: 0px 5px 6px 2px #D39559;
 }
 
 ul {
@@ -31,7 +31,7 @@ ul {
 li {
     list-style: none;
     text-transform: capitalize;
-    color: #ec6e4c;
+    color: #D39559;
     text-align: left;
     padding: 0;
     margin: 0;
@@ -45,7 +45,7 @@ hr {
 
 .container-app {
     margin: 15px 10px;
-    border: 2px solid #ec6e4c;
+    border: 2px solid #D39559;
     border-radius: 42px;
     background: #f2e5b5;
 }
@@ -57,7 +57,7 @@ hr {
 
 .form-control {
     background-color: #f2e5b5;
-    color: #ec6e4c;
+    color: #D39559;
     border: 1px solid #ecc046;
 }
 
@@ -72,13 +72,13 @@ hr {
 }
 
 .btn {
-    background-color: #42c0d2;
-    border: #42c0d2;
+    background-color: #A4CFC7;
+    border: #A4CFC7;
     color: #f2e5b5;
 }
 
 a:link {
-    color: #ec6e4c;
+    color: #D39559;
     text-decoration: none;
 }
 
@@ -99,7 +99,7 @@ a:link {
 
 .d-flex {
     font-size: 55px;
-    color: #ec6e4c;
+    color: #D39559;
 }
 
 .temp-number {
@@ -120,11 +120,11 @@ a:link {
     right: 15px;
     font-size: medium;
     font-weight: bold;
-    color: #ec6e4c;
+    color: #D39559;
 }
 
 .active {
-    color: #ec6e4c;
+    color: #D39559;
     cursor: default;
 }
 
@@ -133,7 +133,7 @@ a:link {
 }
 
 .card-text-weather-conditions {
-    color: #ec6e4c;
+    color: #D39559;
     text-align: left;
     border: 1px solid #ecc046;
     border-radius: 10px;
@@ -142,39 +142,39 @@ a:link {
 }
 
 .max-current-temp {
-    color: #ec6e4c;
+    color: #D39559;
     font-size: 20px;
 }
 
 .min-current-temp {
-    color: #42c0d2;
+    color: #A4CFC7;
     font-size: 20px;
     padding-bottom: 20px;
 }
 
 .weather-forecast {
-    color: #ec6e4c;
+    color: #D39559;
     text-align: center;
 }
 
 .max-forecast-temp {
-    color: #ec6e4c;
+    color: #D39559;
     font-size: 16px;
 }
 
 .min-forecast-temp {
-    color: #42c0d2;
+    color: #A4CFC7;
     font-size: 16px;
 }
 
 .forecast-text {
-    color: #ec6e4c;
+    color: #D39559;
     font-size: 16px;
     padding: 5px;
 }
 
 .forecast-temperature {
-    color: #ec6e4c;
+    color: #D39559;
     padding: 5px;
 }
 
@@ -183,22 +183,22 @@ a:link {
 }
 
 .link-github:hover {
-    color: #ec6e4c;
+    color: #D39559;
     text-decoration: underline;
 }
 
 .link-linkedin {
-    color: #ec6e4c;
+    color: #D39559;
 }
 
 .link-linkedin:hover {
     text-decoration: underline;
-    color: #ec6e4c;
+    color: #D39559;
 }
 
 .madebyme {
     text-align: center;
-    color: #ec6e4c;
+    color: #D39559;
     max-width: 100%;
     margin-top: 30px;
     font-size: 15px;
