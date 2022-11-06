@@ -10,12 +10,12 @@ export default function Weather(props) {
   function handleResponseData (response) {
     setWeather({
       ready: true,
-      temperature: response.data.temperature.current,
+      temperature: Math.round(response.data.temperature.current),
       humidity: response.data.temperature.humidity,
       date: new Date(response.data.time *1000),
       description: response.data.condition.description,
-      icon:`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png`,
-      wind: response.data.wind.speed,
+      icon:response.data.condition.icon,
+      wind: Math.round(response.data.wind.speed),
       city: response.data.city,
     });}
   
