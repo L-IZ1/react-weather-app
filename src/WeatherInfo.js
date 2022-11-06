@@ -1,6 +1,7 @@
 import React from "react";
 import NiceDate from "./NiceDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperatureConversion from "./WeatherTemperatureConversion";
 
 export default function WeatherInfo(props){
     return (
@@ -19,8 +20,9 @@ export default function WeatherInfo(props){
                 <div className="d-flex weather-temperature">
                 <div className="float-left">
                   <WeatherIcon code={props.data.icon} alt={props.data.description}/>
-                  <span><strong className="temp-number">{props.data.temperature}</strong></span>
-                  <span className="celsius">°C</span>
+                  <WeatherTemperatureConversion celsius={props.data.temperature}/>
+                  
+    
                 </div>
                 </div>
                   <ul>
