@@ -1,4 +1,4 @@
-import React, { useState, CSSProperties } from "react";
+import React, { useState} from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import { Facebook } from 'react-content-loader'
@@ -11,8 +11,8 @@ export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   
-let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState("#ffffff");
+// let [loading, setLoading] = useState(true);
+// let [color, setColor] = useState("#ffffff");
 
   function handleResponseData (response) {
     setWeather({
@@ -74,7 +74,7 @@ else{
       {/* <input value={""} onChange={(input) => setColor(input.target.value)} /> */}
       <ScaleLoader
         color="#f7eaec"
-        loading={loading}
+        // loading={loading}
         size={1000}
         aria-label="ScaleLoader"
         data-testid="loader"
