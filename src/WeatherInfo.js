@@ -31,21 +31,17 @@ export default function WeatherInfo(props){
                   
           <div className="col-md-4 weather-live mt-5">
                 <p className="card-text-weather-conditions">
-                    <i className="fa-solid fa-arrow-up max-current-temp"></i>{" "}
-                    Max:Info API
-                    <span id="max-temp"></span>°C
-                    <br />
-                    <i className="fa-solid fa-arrow-down min-current-temp"></i>{" "}
-                    Min: Info API
-                    <span id="min-temp"></span>°C
-                    <br />
-                    <span>Humidity: {props.data.humidity} %</span><br />
-                    <span>Wind speed: {props.data.wind} km/h</span>
+                    <span>Feels like:{props.data.feeling}°C</span><br />
+                    <span>Humidity: {props.data.humidity}%</span><br />
+                    <span>Wind: {props.data.wind}km/h</span>
                 </p>
             </div> 
             </div>
      </div>
+      <div>{" "}
+              <hr />{" "}
+            </div>
      </div>
-    
+   
 );
 }

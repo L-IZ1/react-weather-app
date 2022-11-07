@@ -7,10 +7,7 @@ export default function App() {
       <div className="App">
         <div className="container">
         <Weather defaultCity="Paris"/>
-              <div>{" "}
-              <hr />{" "}
-            </div>
-               
+               </div>
           <p className="madebyme">
             <a
               className="link-github"
@@ -26,7 +23,7 @@ export default function App() {
               by Elise Petitjean <i className="fa-brands fa-linkedin"></i>
             </a>
           </p>
-        </div>
+        
         </div>
   );
 }

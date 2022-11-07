@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, CSSProperties } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import { Facebook } from 'react-content-loader'
 import axios from "axios";
 import "./Weather.css";
+import ScaleLoader from "react-spinners/ScaleLoader";
 
 
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  
+let [loading, setLoading] = useState(true);
+  let [color, setColor] = useState("#ffffff");
 
   function handleResponseData (response) {
     setWeather({
@@ -18,6 +23,7 @@ export default function Weather(props) {
       description: response.data.condition.description,
       icon:response.data.condition.icon,
       wind: Math.round(response.data.wind.speed),
+      feeling: Math.round(response.data.temperature.feels_like),
       city: response.data.city,
     });}
   
@@ -36,6 +42,7 @@ function search() {
     axios.get(apiUrl).then(handleResponseData);
   }
 
+  
   if (weather.ready) {
   return (
     <div className="WeatherApp">
@@ -61,5 +68,17 @@ function search() {
      ); }
 else{
   search();
-  return "Hello";
+  return (
+    <div className="sweet-loading">
+      {/* <button onClick={() => setLoading(!loading)}>Loading</button> */}
+      {/* <input value={""} onChange={(input) => setColor(input.target.value)} /> */}
+      <ScaleLoader
+        color="#f7eaec"
+        loading={loading}
+        size={1000}
+        aria-label="ScaleLoader"
+        data-testid="loader"
+      />
+    </div>
+  );
 }}

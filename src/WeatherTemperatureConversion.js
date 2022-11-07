@@ -17,11 +17,11 @@ export default function WeatherTemperatureConversion (props){
     return(
 <div>
 <span className="temp-number">{props.celsius}</span>
-<span className="units">°C| {""}<a href="/" onClick={showFahrenheit}>°F</a></span>
+<span className="units">°C|{""}<a href="/" onClick={showFahrenheit}>°F</a></span>
 </div>
 );
 }else{
-    let fahrenheit= (props.celsius *9)/5+32;
+    let fahrenheit= Math.round(props.celsius *9)/5+32;
     return (
 <div>
 <span className="temp-number">{fahrenheit}</span>
