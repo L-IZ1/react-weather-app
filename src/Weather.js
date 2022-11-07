@@ -63,7 +63,7 @@ function search() {
           </div>
         </form>
     <WeatherInfo data={weather}/>
-    <WeatherForecast/>
+    <WeatherForecast city={city}/>
      </div>
      ); }
 else{
