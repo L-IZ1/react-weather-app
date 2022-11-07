@@ -1,7 +1,6 @@
 import React, { useState} from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
-import { Facebook } from 'react-content-loader'
 import axios from "axios";
 import "./Weather.css";
 import ScaleLoader from "react-spinners/ScaleLoader";
