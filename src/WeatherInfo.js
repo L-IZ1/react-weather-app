@@ -34,6 +34,8 @@ export default function WeatherInfo(props){
                     <span>Feels like:{props.data.feeling}°C</span><br />
                     <span>Humidity: {props.data.humidity}%</span><br />
                     <span>Wind: {props.data.wind}km/h</span>
+                    <i className="fa-solid fa-wind"></i>
+                    <i className="fa-solid fa-wind" aria-hidden="true"></i>
                 </p>
             </div> 
             </div>

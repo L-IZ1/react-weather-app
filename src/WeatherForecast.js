@@ -1,26 +1,36 @@
-import React from "react";
-import WeatherIcon from "./WeatherIcon";
+import React,{useState} from "react";
 import "./WeatherForecast.css";
+import WeatherForecastDay from "./WeatherForecastDay";
 import axios from "axios";
 
 export default function WeatherForecast (props){
-function handleResponseData (response){
 
+let [loaded, setLoaded]=useState(false);
+let [forecast, setForecast]=useState(null);
+
+function handleResponseData (response){
+setForecast(response.data.daily);
+setLoaded(true);
 }
 
-    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query="Paris"&key=41ee92b1c86o6aate6aaf3f706eca04d&units=metric`;
-    axios.get(apiUrl).then(handleResponseData);
-
+if (loaded){
+    
     return(
-        <div className="WeatherForecast">
+<div className="WeatherForecast">
             <div className="row">
                 <div className="col">
-                    <div className="ForecastDay">Thu Icon </div>
-                    <WeatherIcon/>
-                    <div className="ForecastTemperature-max">19°</div>
-                    <div className="ForecastTemperature-min">10°</div>
+                    <WeatherForecastDay data={forecast[0]}/>
                 </div>
             </div>
         </div>
-    );
+        );
+} else{
+
+let longitude = props.coordinates.longitude;
+let latitude = props.coordinates.latitude;
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=41ee92b1c86o6aate6aaf3f706eca04d`;
+
+axios.get(apiUrl).then(handleResponseData);
+return null;
+}
 }
