@@ -10,8 +10,6 @@ export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   
-// let [loading, setLoading] = useState(true);
-// let [color, setColor] = useState("#ffffff");
 
   function handleResponseData (response) {
     setWeather({
@@ -59,7 +57,6 @@ function search() {
           type="submit" 
           value="Search"
           className="btn btn-primary w-100" />
-          
           </div>
           </div>
         </form>
@@ -71,11 +68,8 @@ else{
   search();
   return (
     <div className="sweet-loading">
-      {/* <button onClick={() => setLoading(!loading)}>Loading</button> */}
-      {/* <input value={""} onChange={(input) => setColor(input.target.value)} /> */}
       <ScaleLoader
         color="#f7eaec"
-        // loading={loading}
         size={1000}
         aria-label="ScaleLoader"
         data-testid="loader"

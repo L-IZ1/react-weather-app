@@ -1,8 +1,5 @@
 import React from "react";
 import Weather from "./Weather.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
-
 
 export default function App() {
   return (
@@ -10,9 +7,7 @@ export default function App() {
         <div className="container">
         <Weather defaultCity="Paris"/>
                </div>
-          <p className="madebyme">
-             
-              
+          <p className="madebyme">  
             <a
               className="link-github"
               href="https://github.com/L-IZ1/react-weather-app" target="_blank" rel="noopener noreferrer"
@@ -25,14 +20,10 @@ export default function App() {
               href="https://www.linkedin.com/in/elisepetitjean/" target="_blank" rel="noopener noreferrer"
             >
               {" "}
-              by Elise Petitjean 
-              
+              by Elise Petitjean
             </a>
-            <span class="ml-1"></span> <FontAwesomeIcon icon={faLinkedin} />
-           
-            
+            <span class="ml-1"></span> <i class="fa-brands fa-linkedin"></i>
           </p>
-        
         </div>
   );
 }
