@@ -88,6 +88,26 @@ a:link {
     text-decoration: none;
 }
 
+.colorPrimary {
+    color: #d7959A;
+}
+
+.colorPrimary:hover{
+    color: #eaedf7;
+}
+
+.ForecastMinTemp{
+    color: #eaedf7;
+    opacity: 0.6;
+}
+.TemperaturesForecast {
+    margin-bottom: 25px;
+}
+
+.Weather canvas {
+display: inline-block;
+}
+
 .live-weather {
     max-width: 100%;
 }

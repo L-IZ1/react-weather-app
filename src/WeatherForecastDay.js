@@ -23,9 +23,9 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     return(
         <div><div>{day()}</div>
-        <WeatherIcon code={props.data.condition.icon} size={36} alt={props.data.description} />
-        <div><span>{maxTemperature()}|</span>
-        <span>{minTemperature()}</span></div>
+        <WeatherIcon code={props.data.condition.icon}  alt={props.data.description} />
+        <div className="TemperaturesForecast"><span >{maxTemperature()}|</span >
+        <span className="ForecastMinTemp">{minTemperature()}</span></div>
         </div>
     );
 }

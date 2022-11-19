@@ -1,8 +1,8 @@
 import React, { useState} from "react";
 import WeatherInfo from "./WeatherInfo";
+import "./Weather.css";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
-import "./Weather.css";
 import ScaleLoader from "react-spinners/ScaleLoader";
 
 
@@ -59,6 +59,7 @@ function search() {
           type="submit" 
           value="Search"
           className="btn btn-primary w-100" />
+          
           </div>
           </div>
         </form>

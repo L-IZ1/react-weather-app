@@ -1,5 +1,7 @@
 import React from "react";
 import Weather from "./Weather.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 
 export default function App() {
@@ -15,9 +17,9 @@ export default function App() {
               className="link-github"
               href="https://github.com/L-IZ1/react-weather-app" target="_blank" rel="noopener noreferrer"
             >
-              Open-source code on GitHub 
+              Open-source code on GitHub
             </a>
-             <i className="fa fa-github" aria-hidden="true"></i>
+             <span class="ml-1"></span> <i className="fa fa-github" aria-hidden="true"></i>
             <a
               className="link-linkedin"
               href="https://www.linkedin.com/in/elisepetitjean/" target="_blank" rel="noopener noreferrer"
@@ -26,7 +28,7 @@ export default function App() {
               by Elise Petitjean 
               
             </a>
-            <i class="fa-brands fa-linkedin"></i>
+            <span class="ml-1"></span> <FontAwesomeIcon icon={faLinkedin} />
            
             
           </p>

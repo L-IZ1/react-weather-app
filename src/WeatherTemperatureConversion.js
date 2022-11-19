@@ -17,7 +17,7 @@ export default function WeatherTemperatureConversion (props){
     return(
 <div>
 <span className="temp-number">{props.celsius}</span>
-<span className="units">°C|{""}<a href="/" onClick={showFahrenheit}>°F</a></span>
+<span className="units">°C|{""}<a className="colorPrimary" href="/" onClick={showFahrenheit}>°F</a></span>
 </div>
 );
 }else{
@@ -25,7 +25,7 @@ export default function WeatherTemperatureConversion (props){
     return (
 <div>
 <span className="temp-number">{fahrenheit}</span>
-<span className="units"><a href="/" onClick={showCelsius}>°C</a> {""} |°F</span>
+<span className="units"><a className="colorPrimary" href="/" onClick={showCelsius}>°C</a> {""} |°F</span>
  </div>
  );
 }

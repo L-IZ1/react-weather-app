@@ -3,12 +3,13 @@ import NiceDate from "./NiceDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperatureConversion from "./WeatherTemperatureConversion";
 
+
 export default function WeatherInfo(props){
     return (
     <div className="WeatherInfo">
   <div className="live-weather">
     <div className="row">
-      <div className="col-md-7 live-city mt-5">
+      <div className="col-md-6 live-city mt-5">
           <ul>
             <li>
               <span className="searched-place">{props.data.city}</span>
@@ -29,13 +30,11 @@ export default function WeatherInfo(props){
                   </ul>
                 </div>
                   
-          <div className="col-md-4 weather-live mt-5">
+          <div className="col-md-5 weather-live mt-5">
                 <p className="card-text-weather-conditions">
-                    <span>Feels like:{props.data.feeling}°C</span><br />
-                    <span>Humidity: {props.data.humidity}%</span><br />
-                    <span>Wind: {props.data.wind}km/h</span>
-                    <i className="fa-solid fa-wind"></i>
-                    <i className="fa-solid fa-wind" aria-hidden="true"></i>
+                   <i class="fa-solid fa-user"></i> <span>Feels like:{props.data.feeling}°C</span><br />
+                    <i className="fa-solid fa-droplet"></i> <span>Humidity: {props.data.humidity}%</span><br />
+                    <i class="fa-solid fa-wind"></i> <span>Wind: {props.data.wind}km/h</span>
                 </p>
             </div> 
             </div>
