@@ -100,14 +100,6 @@ a:link {
     margin-bottom: 5px;
 }
 
-.d-flex {
-    font-size: 55px;  
-}
-
-.d-flex canvas{
-    font-size: 55px;;
-}
-
 .temp-number {
     padding-right: 15px;
     color: #f7eaec;
